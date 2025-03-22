@@ -31,6 +31,6 @@ Welcome to **Satellite Orbit Simulator!** This interactive web application allow
 
 ## 📦 Installation & Usage  
 ### 🔹 **Live Demo**  
-Try it online: **[Live Demo](https://your-live-demo-link.com)**  
+Try it online: **[Live Demo](https://abhishek-465.github.io/Satellite-orbit-simulator/)**  
 
 
