@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Orbital Simulation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Satellite Orbit Simulator</h1>
+        <input id="in1" type="number" placeholder="Satellite altitude in km">
+        <button onclick="startOrbit()">Simulate</button>
+
+        <div class="diagram">
+            <div class="orbit-container">
+                <div class="orbit">
+                    <div class="earth">
+                        <img src="earth.png" class="planet">
+                    </div>
+                    <div id="satellite" class="satellite"></div>
+                    <div id="moon" class="moon"></div>
+                </div>
+            </div>
+        </div>
+<div class="results-container">
+        <p class="result" id="result1">Orbital Period: --</p>
+        <p class="result" id="result2">Orbital Velocity: --</p>
+        <p class="result" id="result3">Orbit: --</p>
+        <p class="result" id="result8">Radiation Exposure: --</p>
+        <p class="result" id="result4">Gravity at Orbit: --</p>
+        <p class="result" id="result5">Escape Velocity: --</p>
+        <p class="result" id="result6">Signal Latency: --</p>
+        <p class="result" id="result7">Temperature: --</p>
+        
+    </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

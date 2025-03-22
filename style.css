@@ -1,0 +1,181 @@
+/* Import 7-Segment Font */
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    font-family: 'DS-Digital', sans-serif;
+    max-width: 600px;
+    margin: auto;
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Input & Button */
+input {
+    padding: 10px;
+    width: 60%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Diagram Section */
+.diagram {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+/* Orbit Container */
+.orbit-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+/* Earth Image */
+.planet {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.earth:hover::after{
+    content: "Earth";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 30px;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+/* Orbit Circle */
+.orbit {
+    position: absolute;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.moon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 230, 230, 0.823);
+
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.moon:hover::after{
+    content: "Moon";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 25px;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+/* Satellite */
+.satellite {
+    position: absolute;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(139, 127, 41);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.satellite:hover::after{
+    content: "Satellite";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 25px;
+    font-family: sans-serif;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+
+
+/* Result Display - Grid for Laptops */
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Individual Result Box */
+.result {
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    background: #111;
+    color: #0ff; /* LED-like cyan */
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #0ff;
+    letter-spacing: 2px;
+}
+
+/* Responsive: Column View for Small Screens */
+@media (max-width: 550px) {
+    .results-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
